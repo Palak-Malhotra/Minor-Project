@@ -7,6 +7,6 @@
     <title>Redirecting...</title>
 </head>
 <body>
-    <p>If you are not redirected, <a href="index.html">click here</a>.</p>
+    <p>If you are not redirected, <a href="Minor-Project/HTML/index.html">click here</a>.</p>
 </body>
 </html>
