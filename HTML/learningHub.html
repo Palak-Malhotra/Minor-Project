@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/learningHub.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Learning Hub - Chronicles of Celestial Bodies Exploration</title>
+</head>
+<body>
+    <header>
+        <h1>Chronicles of Celestial Bodies Exploration</h1>
+    </header>
+
+    <section id="learning-hub">
+        <h2>Dive into the Wonders of Celestial Bodies!</h2>
+        <p>Explore interactive modules, multimedia resources, and join our community to learn about the fascinating world of Celestial Bodies!</p>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('planet-content')" class="collapsible">Planets</h3>
+            <div id="planet-content" class="content">
+                <p><strong>Planets:</strong> Explore the planets in our solar system, each with its own unique properties.</p>
+        
+                <!-- Planet Slideshow -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      
+                      <!-- Mercury -->
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg?w=1024" alt="Mercury">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Mercury</h5>
+                          <p>Distance: 57.9 million km | Diameter: 4,880 km | Mass: 3.30 × 10²³ kg</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Venus -->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://science.nasa.gov/wp-content/uploads/2023/06/Venus-jpeg.webp?w=4096&format=png&crop=1" alt="Venus">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Venus</h5>
+                          <p>Distance: 108.2 million km | Diameter: 12,104 km | Mass: 4.87 × 10²⁴ kg</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Earth -->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxiesC9Z3X0ocxnUtJDbsVReITC3wcSWIAew&s" alt="Earth">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Earth</h5>
+                          <p>Distance: 149.6 million km | Diameter: 12,742 km | Mass: 5.97 × 10²⁴ kg</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Mars -->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://science.nasa.gov/wp-content/uploads/2016/05/1-mars-nasa-gov-jpg.webp?w=400" alt="Mars">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Mars</h5>
+                          <p>Distance: 227.9 million km | Diameter: 6,779 km | Mass: 6.42 × 10²³ kg</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Jupiter -->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://science.nasa.gov/wp-content/uploads/2023/09/maxresdefault_copy.jpg?w=4096&format=jpeg&crop=1" alt="Jupiter">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Jupiter</h5>
+                          <p>Distance: 778.5 million km | Diameter: 139,820 km | Mass: 1.90 × 10²⁷ kg</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Saturn -->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://images-assets.nasa.gov/image/PIA11141/PIA11141~large.jpg?w=1920&h=929&fit=clip&crop=faces%2Cfocalpoint" alt="Saturn">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Saturn</h5>
+                          <p>Distance: 1.43 billion km | Diameter: 116,460 km | Mass: 5.68 × 10²⁶ kg</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Uranus -->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnrzTXU-EixrpeZOlG9ukUG4MvtNbHbgWXw&s" alt="Uranus">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Uranus</h5>
+                          <p>Distance: 2.87 billion km | Diameter: 50,724 km | Mass: 8.68 × 10²⁵ kg</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Neptune -->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYI8dYcPp-FjE1ALmRudxCh-bc9XAatpryw&s" alt="Neptune">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Neptune</h5>
+                          <p>Distance: 4.50 billion km | Diameter: 49,244 km | Mass: 1.02 × 10²⁶ kg</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Pluto -->
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://science.nasa.gov/wp-content/uploads/2023/06/color-image-of-pluto-pia20291-1.jpg?w=1024" alt="Pluto">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Pluto</h5>
+                          <p>Distance: 5.91 billion km | Diameter: 2,377 km | Mass: 1.31 × 10²² kg</p>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  
+                    <!-- Carousel Controls -->
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  
+            </div>
+        </div>        
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('asteroid-content')" class="collapsible">Asteroids</h3>
+            <div id="asteroid-content" class="content">
+                <p><strong>Definition:</strong> Small, rocky objects that orbit the Sun...</p>
+                <p><strong>Types:</strong> C-type, S-type, M-type...</p>
+                <p><strong>Examples:</strong> Ceres, Eros...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('exoplanet-content')" class="collapsible">Exoplanets</h3>
+            <div id="exoplanet-content" class="content">
+                <p><strong>Definition:</strong> A planet located outside our solar system...</p>
+                <p><strong>Types:</strong> Hot Jupiters, Super-Earths, Potentially Habitable...</p>
+                <p><strong>Examples:</strong> Proxima Centauri b, TRAPPIST-1...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('constellation-content')" class="collapsible">Constellations</h3>
+            <div id="constellation-content" class="content">
+                <p><strong>Definition:</strong> A group of stars that form a recognizable pattern...</p>
+                <p><strong>Types:</strong> Zodiac, Seasonal...</p>
+                <p><strong>Examples:</strong> Orion, Ursa Major...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('moon-content')" class="collapsible">Moons</h3>
+            <div id="moon-content" class="content">
+                <p><strong>Definition:</strong> Natural satellites that orbit planets...</p>
+                <p><strong>Examples:</strong> Earth's Moon, Europa, Titan...</p>
+                <p><strong>Significance:</strong> Moons can have unique geological features and may harbor conditions for life.</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('nebula-content')" class="collapsible">Nebulae</h3>
+            <div id="nebula-content" class="content">
+                <p><strong>Definition:</strong> Clouds of gas and dust in space...</p>
+                <p><strong>Types:</strong> Emission, Reflection, Dark Nebulae...</p>
+                <p><strong>Examples:</strong> Orion Nebula, Crab Nebula...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('galaxy-content')" class="collapsible">Galaxies</h3>
+            <div id="galaxy-content" class="content">
+                <p><strong>Definition:</strong> Massive systems of stars, gas, dust, and dark matter...</p>
+                <p><strong>Types:</strong> Spiral, Elliptical, Irregular...</p>
+                <p><strong>Examples:</strong> Milky Way, Andromeda...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('blackhole-content')" class="collapsible">Black Holes</h3>
+            <div id="blackhole-content" class="content">
+                <p><strong>Definition:</strong> Regions in space where gravity is so strong that nothing can escape...</p>
+                <p><strong>Formation:</strong> Formed from the remnants of massive stars after supernova explosions.</p>
+                <p><strong>Types:</strong> Stellar, Supermassive, Intermediate...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('spacemissions-content')" class="collapsible">Space Missions</h3>
+            <div id="spacemissions-content" class="content">
+                <p><strong>Definition:</strong> Scientific missions launched to explore outer space...</p>
+                <p><strong>Notable Missions:</strong> Hubble Space Telescope, Mars Rover Missions...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('astrobiology-content')" class="collapsible">Astrobiology</h3>
+            <div id="astrobiology-content" class="content">
+                <p><strong>Definition:</strong> The study of the origin, evolution, and possibility of life in the universe...</p>
+                <p><strong>Research Areas:</strong> Extremophiles, potential biosignatures...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('bigbang-content')" class="collapsible">The Big Bang and Cosmic Evolution</h3>
+            <div id="bigbang-content" class="content">
+                <p><strong>Definition:</strong> The leading explanation for the origin of the universe...</p>
+                <p><strong>Key Events:</strong> Formation of subatomic particles, formation of atoms...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('astronomicaltools-content')" class="collapsible">Astronomical Tools and Techniques</h3>
+            <div id="astronomicaltools-content" class="content">
+                <p><strong>Definition:</strong> Instruments used to observe celestial objects...</p>
+                <p><strong>Examples:</strong> Telescopes, spectrometers...</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 onclick="toggleContent('spacetechnology-content')" class="collapsible">Space Exploration Technology</h3>
+            <div id="spacetechnology-content" class="content">
+                <p><strong>Definition:</strong> Advancements in technology that enable space exploration...</p>
+                <p><strong>Examples:</strong> Rocket propulsion, space habitats...</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chronicles of Exoplanet Exploration</p>
+    </footer>
+    <script src="../js/learningHub.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
