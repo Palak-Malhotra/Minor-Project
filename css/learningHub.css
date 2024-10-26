@@ -25,6 +25,10 @@ h2, h3 {
     color: #f9d74a;
 }
 
+a {
+    color: blue;
+}
+
 p {
     color: #cccccc;
     line-height: 1.6;
