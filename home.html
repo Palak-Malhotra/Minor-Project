@@ -17,34 +17,15 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="HTML/orrery.html" target="blank">Explore</a></li>
                 <li><a href="HTML/learningHub.html" target="_blank">Learning Hub</a></li>
-                <li><a href="#research" target="_blank">Research</a></li>
+                <li><a href="HTML/research.html" target="_blank">Research</a></li>
                 <li><a href="HTML/agriculture.html" target="_blank">Agriculture Tool</a></li>
             </ul>
         </nav>
-        <div id="nebulaBackdrop"></div>
-        <div id="forest"></div>
-        <div id="star"></div>
-        <div id="comet"></div>
-        <div id="ufo">🛸</div>
-        <svg id="filters" width="0" height="0">
-        <filter id="distort">
-            <feMorphology id="distortRadius" operator="erode" radius="1 1" in="SourceGraphic" result="morphology"/>
-        </filter>
-        <filter id="rocky">
-            <feTurbulence class="turbs" type="turbulence" baseFrequency=".02" numOctaves="10" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence1"/>
-            <feDiffuseLighting class="lighting" in='noise' lighting-color='' surfaceScale='5'>
-            <feDistantLight class="elevation" azimuth='210' elevation='75' />
-            </feDiffuseLighting>
-            <feComposite in="texture" in2="SourceGraphic" operator="in" />
-        </filter>
-        <filter id="rocky2">
-            <feTurbulence class="turbs" type="fractalNoise" baseFrequency='0.03 0.03' numOctaves="20" result='noise' />
-            <feDiffuseLighting class="lighting" in='noise' lighting-color='' surfaceScale='1'>
-            <feDistantLight class="elevation" azimuth='25' elevation='10' />
-            </feDiffuseLighting>
-            <feComposite in="texture" in2="SourceGraphic" operator="in" />
-        </filter>
-        </svg>
+        <!-- partial:index.partial.html -->
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+        <!-- partial -->
         <script src="js/home.js"></script>
     </body>
 </html>

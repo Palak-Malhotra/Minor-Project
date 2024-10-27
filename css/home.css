@@ -1,139 +1,154 @@
 html, body {
-    margin: 0;
-    padding:0;
-    height: 100vh;
-    width:100vw;
-    overflow: hidden;
-    background-size:cover;
-    background-repeat:no-repeat;
-    perspective:2000px;
-    background-color:black;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  perspective: 2000px;
+  background-color: black;
+}
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #1a1a2e, #16213e);
-    padding: 10px 20px;
+.navbar {
+  z-index: 10; /* Ensures navbar is above background layers */
+  position: relative; /* Keeps it above positioned background layers */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(6, 6, 9, 0.7); /* Transparent background */
+  padding: 10px 20px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #e94560;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0e5868;
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-list li a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #519435;
+  transition: color 0.3s ease;
 }
 
 .nav-list li a:hover {
-    color: #e94560;
+  color: #b8d816;
 }
 
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .menu-toggle .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #ffffff;
-    margin: 3px 0;
+  height: 3px;
+  width: 25px;
+  background-color: #ffffff;
+  margin: 3px 0;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .nav-list {
-        position: absolute;
-        top: 60px;
-        right: -100%;
-        height: 100vh;
-        width: 200px;
-        background: #16213e;
-        flex-direction: column;
-        align-items: center;
-        transition: right 0.3s ease;
-    }
+  .nav-list {
+      position: absolute;
+      top: 60px;
+      right: -100%;
+      height: 100vh;
+      width: 200px;
+      background: rgba(22, 33, 62, 0.9); /* Slightly transparent */
+      flex-direction: column;
+      align-items: center;
+      transition: right 0.3s ease;
+  }
 
-    .nav-list.active {
-        right: 0;
-    }
+  .nav-list.active {
+      right: 0;
+  }
 
-    .menu-toggle {
-        display: flex;
-    }
+  .menu-toggle {
+      display: flex;
+  }
 
-    .nav-list li {
-        margin: 20px 0;
-    }
+  .nav-list li {
+      margin: 20px 0;
+  }
 }
 
-  .planetContainer {
-    transform-style:preserve-3d;
-    z-index:5;
-  }
-  #ufo, #comet, #star, .tree, .mountain, #forest, .planetContainer, .moon, .ring, .inner, .planet, .planetoid {
-    position:absolute;
-  }
-  .planet, .moon, .planetoid {
-    background-color:black;
-  }
-  
-  .ring {
-    border-radius:50%;
-  }
-  #nebulaBackdrop, #forest {
-    width:100vw;
-    height:100vh;
-  }
-  #forest {
-    bottom:0;
-    z-index:10;
-    background-size:cover;
-    height:100px;
-    background: linear-gradient(transparent 0%, black 100%);
-  }
-  
-  .tree, .mountain {
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-  }
-  #comet {
-    z-index:-1;
-    border-radius:0 50% 50% 0 / 0 40% 40% 0;
-    filter: drop-shadow(1px 1px 1px blue);
-    /*plus a border/borderRight via code*/
-  }
-  
-  #star {  /*distant home star*/
-    z-index:-1;
-    left:50%;
-    top:50%;
-    width:5px;
-    height:5px;
-    border-radius:50%;
-    background:white;
-    box-shadow: 0px 0px 80px 20px hsla(1,0%,100%,.8), 0 0 20px 5px #F3F3E8; 
-  }
-  @keyframes sway {
-    /*not used for trees, cool idea though*/
-    to{
-      transform:skewX(0deg);
-    }
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(33, 33, 33, 0.9);
+  color: #ffffff;
+  display: block;
+  font: 14px/1.3 Arial, sans-serif;
+  height: 50px;
+  position: relative;
+  z-index: 5;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 22px;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 80%;
+  text-align: center;
+}
+
+header a, a:visited {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+@keyframes move-twink-back {
+  from { background-position: 0 0; }
+  to { background-position: -10000px 5000px; }
+}
+
+@keyframes move-clouds-back {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 0; }
+}
+
+.stars, .twinkling, .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index: 1;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index: 3;
+  animation: move-clouds-back 200s linear infinite;
+}
