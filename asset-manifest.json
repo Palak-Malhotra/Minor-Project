@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Minor-Project/agriculture-tool/static/css/main.c0584cf1.css",
+    "main.js": "/Minor-Project/agriculture-tool/static/js/main.2136e8cb.js",
+    "static/js/488.f8f1998f.chunk.js": "/Minor-Project/agriculture-tool/static/js/488.f8f1998f.chunk.js",
+    "index.html": "/Minor-Project/agriculture-tool/index.html",
+    "main.c0584cf1.css.map": "/Minor-Project/agriculture-tool/static/css/main.c0584cf1.css.map",
+    "main.2136e8cb.js.map": "/Minor-Project/agriculture-tool/static/js/main.2136e8cb.js.map",
+    "488.f8f1998f.chunk.js.map": "/Minor-Project/agriculture-tool/static/js/488.f8f1998f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0584cf1.css",
+    "static/js/main.2136e8cb.js"
+  ]
+}
